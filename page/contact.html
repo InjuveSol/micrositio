@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://kit.fontawesome.com/2157411cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="form">
+        <div class="title">
+            <h2>Contacto</h2>
+        </div>
+        <div class="half">
+            <div class="item">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="item">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="item">
+                <label for="email">Telefono</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+        </div>
+        <div class="full">
+            <label for="message">Mensaje</label>
+            <textarea type="text" name="message" id="message" required></textarea>
+        </div>
+        <div class="action">
+            <input  type="submit" id="button" value="Mandar Email">
+            <a href="../index.html" class="cta">Ir al inicio</a>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/INJUVESOL" class="fa-brands fa-facebook"></a>
+            <a href="https://instagram.com/injuve_solidaridad?igshid=YmMyMTA2M2Y=" class="fa-brands fa-instagram"></a>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('Nu3xoxxZYHL0FR_ba')
+    </script>
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
