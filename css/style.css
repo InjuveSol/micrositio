@@ -545,6 +545,10 @@ knowledge
     font-size: 30px;
 }
 
+.renovamos {
+    z-index: 100;
+}
+
 @keyframes right {
     0% {
         transform:translate(0px,0px);
@@ -647,7 +651,7 @@ knowledge
 @media screen and (max-width:600px) {
 
     .hero__title {
-        font: 2rem;
+        font-size: 2rem;
     }
 
     .hero__paragraph {
